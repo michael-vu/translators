@@ -1,0 +1,136 @@
+ja:
+  static_pages:
+    titles:
+      partner_program:
+        sdk_home: "GrabCADソフトウェア開発キット"
+        sdk_application: "<SDKを購入する>"
+        sdk_application_success: "<SDKを購入する>"
+        partner_home: "GrabCADソフトウェア開発キット"
+        partner_application: "GrabCAD Software Partner Program Application"
+        partner_application_success: "GrabCAD Software Partner Program Application"
+    descriptions:
+      partner_program:
+        sdk_home: "GrabCADソフトウェア開発キットs help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        sdk_application: "GrabCADソフトウェア開発キットs help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        sdk_application_success: "GrabCADソフトウェア開発キットs help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        partner_home: "Meet the partners in the GrabCAD Software Partner Program. Choose a solution that’s right for you!"
+        partner_application: "The GrabCAD Software Partner Program provides technical guidance and marketing support for software partners. Become a partner today!"
+        partner_application_success: "The GrabCAD Software Partner Program provides technical guidance and marketing support for software partners. Become a partner today!"
+    topnav:
+      partner_home: "GrabCADソフトウェア開発キット"
+      sdks: "GrabCADのSDK"
+      apply_now: "Apply Now"
+      buy_sdk: "<SDKを購入する>"
+    keywords:
+      partner_program:
+        partner_home: "Software development kit, SDK, 3D printing software development kit, 3D printing SDK, 3D printing API, 3D printer API"
+    partner_program:
+      application_success:
+        back: "Back"
+        title: "Thank you!"
+        description: "We’ve received your application. A GrabCAD team member will be in touch with you shortly."
+        button: "Done"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "<SDKを購入する>"
+        description: "Complete the application form to start the process of purchasing a GrabCAD SDK. Once you have submitted your application, a GrabCAD team member will reach out to you."
+        labels:
+          sdk_product: "Which GrabCAD SDK you are interested in?"
+        placeholders:
+          sdk_product: "Select SDK"
+      partner_application:
+        back: "Back"
+        title: "Become a Partner"
+        description: "Complete the GrabCAD Software Partner application form to start the process of becoming one of our partners. Once you have submitted your application, a GrabCAD team member will reach out to you."
+        form:
+          submit: "Submit"
+        labels:
+          software_solution: "Your software solution"
+          stratasys_product: "Which Stratasys machine and/or software would you like to integrate with?"
+        placeholders:
+          first_name: "First Name"
+          last_name: "Last Name"
+          email: "Email"
+          company_name: "Company Name"
+          role: "Role"
+          country: "Location"
+          phone: "Phone (Optional)"
+          company_website: "Company Website (Optional)"
+          software_solution: "Briefly describe your software solution"
+          stratasys_product: "List machine and/or software (Optional)"
+      partner_home:
+        hero:
+          title: "GrabCADソフトウェア開発キット"
+          description: "独立系ソフトウェアベンダーには、GrabCADソフトウェア パートナー プログラムに参加するオプションがございます。これは、Stratasysに接続して顧客にエンドツーエンドの積層造形ソリューションを提供するソフトウェア プロバイダーのエコシステムです。GrabCADソフトウェア パートナーになると、GrabCADのSDKにアクセスいただけるようになります。Stratasysのお客様は、個別のSDKを購入することもできます。"
+          button_apply: "Apply Now"
+          button_partners: "  <注目のパートナーに出会う>"
+        section2:
+          title: "  <注目のパートナーに出会う>"
+          description: "We’re working with the best in the industry to bring a complete solution to you, including MES software, DRM software, PLM software and analytics software."
+          partners:
+            - image_path: "static_pages/partner_program/partner_home/partner-siemens.svg"
+              text: "<b>Siemens</b> - Siemens provides an end-to-end software solution for industrialized additive manufacturing that connects and automates every phase of the AM innovation process, from design optimization through part build preparation and simulation to production and qualification."
+              url: "https://www.siemens.com/additive"
+              learn_more: "Learn more about Siemens OpCenter"
+            - image_path: "static_pages/partner_program/partner_home/partner-link3d.svg"
+              text: "<b>Link3D</b> - Link3D enables organizations to scale their additive manufacturing infrastructure across complex supply chains and IT environments."
+              url: "https://am.link3d.co/"
+              learn_more: "Learn more about Link3D"
+            - image_path: "static_pages/partner_program/partner_home/partner-identify3d.svg"
+              text: "<b>Identify3D</b> - Identify3D technology suite enables digital manufacturing by providing usage controls, security, and traceability of design and manufacturing process data across the digital supply chain."
+              url: " https://identify3d.com"
+              learn_more: "Learn more about Identify3D"
+            - image_path: "static_pages/partner_program/partner_home/partner-indusintel.svg"
+              text: "<b>IndusIntel, Inc.</b> - Founded in 2018, IndusIntel Inc is a California-based startup focusing on delivering solutions for enabling efficient and smart additive manufacturing operations. MachineScope offers a single pane of glass view into Additive manufacturing operations across all Stratasys FDM printers. Using MachineScope’s browser-based interface, an Additive operations manager can get insights into build status, machine utilization, shift wise downtime, material consumption and daily/weekly reports."
+              url: "https://www.indusintel.com/"
+              learn_more: "Learn more about IndusIntel"
+            - image_path: "static_pages/partner_program/partner_home/partner-vistory.png"
+              text: "<b>Vistory</b> - Vistory is a software editor that develops cybersecurity solutions to build digital trust. MainChain is a seamless trusted third party for distributed production. MainChain offers manufacturing customers control over risk and increases their supply chain resilience by preserving industrial property, confidentiality and trade secrets, certifying blueprint integrity, tracing industrial property throughout the digital supply chain, and automating workflows."
+              url: "https://www.vistory.com/"
+              learn_more: "Learn more about Vistory"
+        footer:
+          text: "Built upon the GrabCADソフトウェア開発キットs, our partner applications and technology provide a variety of solutions for your enterprise and are certified to work with Stratasys 3D printers and GrabCAD software."
+          button_primary_text: "Join our Partner Program"
+          button_secondary_text: "Learn more about GrabCADのSDK"
+      sdk_home:
+        hero:
+          title: "GrabCADソフトウェア開発キット"
+          description: "Integrate Stratasys technology into your software environment with GrabCADソフトウェア開発キットs. By leveraging standard protocols, APIs and machine emulators to speed up development and testing, GrabCADのSDK help Independent Software Vendors and Customer Developers connect their Stratasys printers to their factory floor."
+          button_text: "Explore our GrabCADのSDK"
+        section1:
+          title: "スマート工場のメリットを活用する"
+          description: "Independent Software Vendors have the option to join our GrabCAD Software Partner Program, an ecosystem of software providers that have connected to Stratasys to provide customers with end-to-end additive solutions. Becoming a GrabCAD Software Partner grants access to GrabCADのSDK. Stratasys customers can also purchase individual SDKs."
+          parts:
+            - title: "生産責任者向け"
+              items:
+                - "社内での積層造形採用を高めます。"
+                - "生産を最適化します。"
+                - "積層造形を事業インフラストラクチャと統合します。"
+            - title: "機器インテグレータ向け"
+              items:
+                - "SDKは、Stratasysプリンタの効果的な統合に必要なものを提供します。"
+                - "当社の技術サポートチームが御社のソフトウェア接続をサポートいたしますので、ご安心ください。"
+          button_text: "  <注目のパートナーに出会う>"
+        section2:
+          title: "Available GrabCADのSDK"
+          description: "当社のSDKパッケージでは、独立系ソフトウェアベンダーおよび顧客開発者が、GrabCADソフトウェアおよびStratasys造形システムと統合できます。"
+          supported_printers: "サポートされているプリンタ：すべてのStratasys F123シリーズ、すべてのFortusモデル（Fortus 250mc、Fortus 360mc、Fortus 400mcを除く）"
+          items:
+            - title: "MTConnect SDK MTConnect標準プロトコルを介して、一部のStratasys機器からデータストリーミングの収集を始められる、リソースを提供する無料パッケージ。"
+              image_path: "static_pages/partner_program/sdk_home/mtconnect-hexagon.svg"
+              text: "A free package that provides resources to get started with collecting data streaming from select Stratasys equipment via the MTConnect SDK MTConnect標準プロトコルを介して、一部のStratasys機器からデータストリーミングの収集を始められる、リソースを提供する無料パッケージ。 standard protocol."
+              supported_printers: "サポートされているプリンタ：すべてのStratasys F123シリーズ、すべてのFortusモデル（Fortus 250mc、Fortus 360mc、Fortus 400mcを除く）"
+            - title: "GrabCAD Printer Connectivity SDK StratasysプリンタをERP、BI、デジタル著作権管理などのエンタープライズアプリケーションと統合します。また、MESシステムと通信して、分析に加えて、自動化および生産データ収集を可能にします。"
+              image_path: "static_pages/partner_program/sdk_home/printer-connectivity-hexagon.svg"
+              text: "GrabCAD Printer Connectivity SDK StratasysプリンタをERP、BI、デジタル著作権管理などのエンタープライズアプリケーションと統合します。また、MESシステムと通信して、分析に加えて、自動化および生産データ収集を可能にします。"
+              supported_printers: "サポートされているプリンタ：すべてのStratasys F123シリーズ、すべてのFortusモデル（Fortus 250mcを除く）"
+            - title: "GrabCADのSDK"
+              is_beta: true
+              image_path: "static_pages/partner_program/sdk_home/plm-sdk-hexagon.svg"
+              text: "GrabCAD PLM SDK GrabCAD PrintデスクトップアプリケーションをPLMボールティングおよびファイル管理と統合して、トレイ準備ワークフローを合理化します。"
+              supported_printers: "Printer support is not applicable to the GrabCADのSDK"
+        footer:
+          text: "GrabCADのSDK include sample code, technical documentation, and support to integrate Stratasys 3D printing solutions with your commercial and proprietary software. This allows you to achieve enterprise goals around system integration, compliance, and workflow automation."
+          button_text: "<SDKを購入する>"
