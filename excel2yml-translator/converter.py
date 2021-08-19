@@ -4,10 +4,11 @@ import pandas as pd
 import difflib
 import yaml
 
-INPUT_DIR = "inputs"
-OUTPUT_DIR = "outputs"
 EXCEL_FILE = "Application forms translations (GC-72055) from vendor.xlsx"
 EN_XML = "static_pages.en.yml"
+
+INPUT_DIR = "inputs"
+OUTPUT_DIR = "outputs"
 START_ROW = 6
 MAX_ROW = 50
 languages = ["de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"]
@@ -88,3 +89,11 @@ print("Cannot find %d translations!" % notFoundCount)
 
 for lang in languages:
     EN_XML.replace("en", lang)
+
+print("Writing XML files")
+for i in range(len(languages)):
+    lang = languages[i]
+    textOut = otherXMLText[i]
+    outName = EN_XML.replace("en", lang)
+    with open(OUTPUT_DIR + "/" + outName, "w") as file:
+        file.write(textOut)

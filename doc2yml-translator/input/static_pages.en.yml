@@ -1,26 +1,26 @@
-zh-TW:
+en:
   static_pages:
     titles:
       partner_program:
-        sdk_home: "GrabCAD 軟體開發套件"
-        sdk_application: "<購買 SDK>"
-        sdk_application_success: "<購買 SDK>"
-        partner_home: "GrabCAD 軟體開發套件"
+        sdk_home: "GrabCAD Software Development Kit"
+        sdk_application: "Buy an SDK"
+        sdk_application_success: "Buy an SDK"
+        partner_home: "GrabCAD Software Partners"
         partner_application: "GrabCAD Software Partner Program Application"
         partner_application_success: "GrabCAD Software Partner Program Application"
     descriptions:
       partner_program:
-        sdk_home: "GrabCAD 軟體開發套件s help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
-        sdk_application: "GrabCAD 軟體開發套件s help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
-        sdk_application_success: "GrabCAD 軟體開發套件s help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        sdk_home: "GrabCAD Software Development Kits help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        sdk_application: "GrabCAD Software Development Kits help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
+        sdk_application_success: "GrabCAD Software Development Kits help ISVs use Stratasys APIs and integrate with Stratasys printers & software. Learn more!"
         partner_home: "Meet the partners in the GrabCAD Software Partner Program. Choose a solution that’s right for you!"
         partner_application: "The GrabCAD Software Partner Program provides technical guidance and marketing support for software partners. Become a partner today!"
         partner_application_success: "The GrabCAD Software Partner Program provides technical guidance and marketing support for software partners. Become a partner today!"
     topnav:
-      partner_home: "GrabCAD 軟體開發套件"
-      sdks: "GrabCAD SDK"
+      partner_home: "GrabCAD Software Partners"
+      sdks: "GrabCAD SDKs"
       apply_now: "Apply Now"
-      buy_sdk: "<購買 SDK>"
+      buy_sdk: "Buy an SDK"
     keywords:
       partner_program:
         partner_home: "Software development kit, SDK, 3D printing software development kit, 3D printing SDK, 3D printing API, 3D printer API"
@@ -34,7 +34,7 @@ zh-TW:
         messages:
           error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
       sdk_application:
-        title: "<購買 SDK>"
+        title: "Buy an SDK"
         description: "Complete the application form to start the process of purchasing a GrabCAD SDK. Once you have submitted your application, a GrabCAD team member will reach out to you."
         labels:
           sdk_product: "Which GrabCAD SDK you are interested in?"
@@ -62,12 +62,12 @@ zh-TW:
           stratasys_product: "List machine and/or software (Optional)"
       partner_home:
         hero:
-          title: "GrabCAD 軟體開發套件"
-          description: "獨立軟體廠商可選擇加入「GrabCAD 軟體合作夥伴方案」，此方案是 Stratasys 技術相關的軟體供應商組成的一個生態系統，提供給客戶點對點的積層製造解決方案。成為 GrabCAD 軟體合作夥伴，便能授與 GrabCAD SDK 存取權。Stratasys 客戶也可以購買個別的 SDK。"
+          title: "GrabCAD Software Partners"
+          description: "The GrabCAD Software Partner Program is an ecosystem of software providers that have connected to Stratasys technology to provide customers with end-to-end additive solutions."
           button_apply: "Apply Now"
-          button_partners: "  <認識我們的特色合作夥伴>"
+          button_partners: "Meet our Featured Partners"
         section2:
-          title: "  <認識我們的特色合作夥伴>"
+          title: "Featured Partners"
           description: "We’re working with the best in the industry to bring a complete solution to you, including MES software, DRM software, PLM software and analytics software."
           partners:
             - image_path: "static_pages/partner_program/partner_home/partner-siemens.svg"
@@ -91,46 +91,47 @@ zh-TW:
               url: "https://www.vistory.com/"
               learn_more: "Learn more about Vistory"
         footer:
-          text: "Built upon the GrabCAD 軟體開發套件s, our partner applications and technology provide a variety of solutions for your enterprise and are certified to work with Stratasys 3D printers and GrabCAD software."
+          text: "Built upon the GrabCAD Software Development Kits, our partner applications and technology provide a variety of solutions for your enterprise and are certified to work with Stratasys 3D printers and GrabCAD software."
           button_primary_text: "Join our Partner Program"
-          button_secondary_text: "Learn more about GrabCAD SDK"
-      sdk_home:
-        hero:
-          title: "GrabCAD 軟體開發套件"
-          description: "Integrate Stratasys technology into your software environment with GrabCAD 軟體開發套件s. By leveraging standard protocols, APIs and machine emulators to speed up development and testing, GrabCAD SDK help Independent Software Vendors and Customer Developers connect their Stratasys printers to their factory floor."
-          button_text: "Explore our GrabCAD SDK"
-        section1:
-          title: "利用智慧型工廠的優點"
-          description: "Independent Software Vendors have the option to join our GrabCAD Software Partner Program, an ecosystem of software providers that have connected to Stratasys to provide customers with end-to-end additive solutions. Becoming a GrabCAD Software Partner grants access to GrabCAD SDK. Stratasys customers can also purchase individual SDKs."
-          parts:
-            - title: "針對生產經理"
-              items:
-                - "改善公司內採用的積層技術。"
-                - "生產最佳化。"
-                - "將積層技術整合到您公司的基礎設施。"
-            - title: "針對設備整合人員"
-              items:
-                - "SDK 提供有效整合 Stratasys 印表機的所需。"
-                - "知道我們的技術支援團隊將支援您與軟體連線，倍感安心。"
-          button_text: "  <認識我們的特色合作夥伴>"
-        section2:
-          title: "Available GrabCAD SDK"
-          description: "我們的 SDK 套件讓獨立軟體廠商與客戶開發人員能夠與 GrabCAD 軟體和 Stratasys 製造系統整合。"
-          supported_printers: "支援的印表機：所有的 Stratasys F123 系列，所有的 Fortus 型號 (Fortus 250mc、Fortus 360mc、Fortus 400mc 除外)"
+          button_secondary_text: "Learn more about GrabCAD SDKs"
+  sdk_home:
+    hero:
+      title: "GrabCAD Software Development Kit"
+      description: "Integrate Stratasys technology into your software environment with GrabCAD Software Development Kits. By leveraging standard protocols, APIs and machine emulators to speed up development and testing, GrabCAD SDKs help Independent Software Vendors and Customer Developers connect their Stratasys printers to their factory floor."
+      button_text: "Explore our GrabCAD SDKs"
+    section1:
+      title: "Leverage the Benefits of the Smart Factory"
+      description: "Independent Software Vendors have the option to join our GrabCAD Software Partner Program, an ecosystem of software providers that have connected to Stratasys to provide customers with end-to-end additive solutions. Becoming a GrabCAD Software Partner grants access to GrabCAD SDKs. Stratasys customers can also purchase individual SDKs."
+      parts:
+        - title: "For Production Managers"
           items:
-            - title: "MTConnect SDK 是免費的套件，可提供資源以開始透過 MTConnect 標準協議從精選的 Stratasys 設備收集資料流。"
-              image_path: "static_pages/partner_program/sdk_home/mtconnect-hexagon.svg"
-              text: "A free package that provides resources to get started with collecting data streaming from select Stratasys equipment via the MTConnect SDK 是免費的套件，可提供資源以開始透過 MTConnect 標準協議從精選的 Stratasys 設備收集資料流。 standard protocol."
-              supported_printers: "支援的印表機：所有的 Stratasys F123 系列，所有的 Fortus 型號 (Fortus 250mc、Fortus 360mc、Fortus 400mc 除外)"
-            - title: "GrabCAD Printer Connectivity SDK 將 Stratasys 印表機與如 ERP、BI 和「數位版權管理」等企業應用式整合。此外也會與 MES 系統通訊，以進行自動化與收集生產資料，並能進行分析。"
-              image_path: "static_pages/partner_program/sdk_home/printer-connectivity-hexagon.svg"
-              text: "GrabCAD Printer Connectivity SDK 將 Stratasys 印表機與如 ERP、BI 和「數位版權管理」等企業應用式整合。此外也會與 MES 系統通訊，以進行自動化與收集生產資料，並能進行分析。"
-              supported_printers: "支援的印表機：所有的 Stratasys F123 系列，所有的 Fortus 型號 (Fortus 250mc 除外)"
-            - title: "GrabCAD SDK"
-              is_beta: true
-              image_path: "static_pages/partner_program/sdk_home/plm-sdk-hexagon.svg"
-              text: "GrabCAD PLM SDK 將 GrabCAD Print 桌面應用程式與 PLM 保存庫和檔案管理功能整合，以簡化紙匣準備工作流程。"
-              supported_printers: "Printer support is not applicable to the GrabCAD SDK"
-        footer:
-          text: "GrabCAD SDK include sample code, technical documentation, and support to integrate Stratasys 3D printing solutions with your commercial and proprietary software. This allows you to achieve enterprise goals around system integration, compliance, and workflow automation."
-          button_text: "<購買 SDK>"
+            - "Improve additive adoption within your company."
+            - "Optimize production."
+            - "Integrate additive with your business infrastructure."
+        - title: "For Equipment Integrators"
+          items:
+            - "SDKs offer what you need to effectively integrate Stratasys printers."
+            - "Relax knowing our technical support team will support you in connecting your software."
+      button_text: "Meet our Featured Partners"
+    section2:
+      title: "Available GrabCAD SDKs"
+      description: "Our SDK packages enable independent software vendors and customer developers to integrate with GrabCAD software and Stratasys manufacturing systems."
+      supported_printers: "Supported Printers"
+      items:
+        - title: "MTConnect"
+          image_path: "static_pages/partner_program/sdk_home/mtconnect-hexagon.svg"
+          text: "A free package that provides resources to get started with collecting data streaming from select Stratasys equipment via the MTConnect standard protocol."
+          supported_printers: "All Stratasys F123 Series, all Fortus models (except Fortus 250mc, Fortus 360mc, Fortus 400mc)"
+        - title: "GrabCAD Printer Connectivity SDK"
+          image_path: "static_pages/partner_program/sdk_home/printer-connectivity-hexagon.svg"
+          text: "Integrates Stratasys printers with enterprise applications such as ERP, BI, and Digital Rights Management. It also communicates with MES systems to enable automation and production data collection, in addition to analytics."
+          supported_printers: "All Stratasys F123 Series, all Fortus models (except Fortus 250mc)"
+        - title: "GrabCAD PLM SDK"
+          is_beta: true
+          image_path: "static_pages/partner_program/sdk_home/plm-sdk-hexagon.svg"
+          text: "Integrates the GrabCAD Print desktop application with PLM vaulting and file management to streamline the tray preparation workflow."
+          supported_printers: "Printer support is not applicable to the GrabCAD PLM SDK"
+    footer:
+      text: "GrabCAD SDKs include sample code, technical documentation, and support to integrate Stratasys 3D printing solutions with your commercial and proprietary software. This allows you to achieve enterprise goals around system integration, compliance, and workflow automation."
+      button_text: "Buy an SDK"
+        

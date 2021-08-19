@@ -5,29 +5,29 @@ import yaml
 
 DEBUG = False
 OUT_DIRECTORY = "output"
-DIRECTORY = "GC-71401_attachments"
+INPUT_DIR = "input"
 EN_DOC = "EN - SDK Landing Page - English.docx"
-EN_XML = "static_pages.en.yml"
+EN_YML = "static_pages.en.yml"
 languages = ["de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"]
 
 cannotFind = []
 
 def readFile(name):
-    en_Text = docx2txt.process(DIRECTORY + "/" + name)
+    en_Text = docx2txt.process("./" + INPUT_DIR + "/" + name)
     en_Text = re.sub(r"\n+", "\n", en_Text)
     en_Text = en_Text.replace("Title: ", "", 1)
     en_Text = en_Text.replace("Meta description: ", "", 1)
     en_Text = en_Text.replace("Top nav bar link name: ", "", 1)
-    # en_Text = re.sub(r"<|>", "", en_Text)
+    en_Text = re.sub(r"<|>", "", en_Text)
     splitText = en_Text.split("\n")
     return splitText
 
-def readXML(name):
-    with open(DIRECTORY + "/" + name) as file:
+def readYML(name):
+    with open("./" + INPUT_DIR + "/" + name) as file:
         return yaml.load(file, Loader=yaml.FullLoader)
 
 enDoc = readFile(EN_DOC)
-enXml = readXML(EN_XML)
+enXml = readYML(EN_YML)
 
 otherDoc = []
 otherXMLText = []
@@ -40,7 +40,7 @@ for lang in languages:
     doc = readFile(fileName)
     otherDoc.append(doc)
 
-with open(DIRECTORY + "/" + EN_XML, "r") as file:
+with open(INPUT_DIR + "/" + EN_YML, "r") as file:
     texts = file.read()
     for i in range(len(languages)):
         lang = languages[i]
@@ -55,17 +55,15 @@ def findStringWithStart(input, doc):
 def getTranslations(index):
     translations = []
     for doc in otherDoc:
-        t = doc[index]
-        translations.append(t)
-        if DEBUG:
-            print("\t" + t)
+        if index < len(doc):
+            t = doc[index]
+            translations.append(t)
     return translations
 
 def writeTranslations(original, translations):
     for i in range(len(translations)):
         translation = translations[i]
-        text = otherXMLText[i]
-        otherXMLText[i] = text.replace(original, translation)
+        otherXMLText[i] = otherXMLText[i].replace(original, translation)
 
 def findMatch(input, doc):
     # Nearest string find
@@ -73,46 +71,47 @@ def findMatch(input, doc):
     if len(matches) > 0:
         match = matches[0]
         matchIndex = doc.index(match)
-        translations = getTranslations(matchIndex)
-        if DEBUG:
-            print(translations)
-        writeTranslations(input, translations)
     else:
-            matchIndex = findStringWithStart(input, doc)
-            if matchIndex > -1:
-                if DEBUG:
-                    print("EN: " + input)
-                translations = getTranslations(matchIndex)
-                writeTranslations(input, translations)
-            else:
-                cannotFind.append(input)
+        matchIndex = findStringWithStart(input, doc)
+    return matchIndex
 
 # What the fuck is happening here i have no clue
-print("Parsing English XML")
-def parseXML(input):
+print("Parsing English YML")
+translationFoundCount = 0
+def parseYML(input):
+    global translationFoundCount
     if input == None:
         return
     if type(input) == list:
         for element in input:
-            parseXML(element)
+            parseYML(element)
     elif type(input) == dict:
         for key in input:
-            parseXML(input[key])
+            parseYML(input[key])
     elif type(input) == str:
-        # I somehow broke this
+        matchIndex = findMatch(input, enDoc)
+        if matchIndex > -1:
+            translations = getTranslations(matchIndex)
+            writeTranslations(input, translations)
+            translationFoundCount = translationFoundCount + 1
+        else:
+            cannotFind.append(input)
 
-        match = findMatch(input, enDoc)
-        # writeTranslations(match, None)
-        # print(match)
+parseYML(enXml)
 
-
-parseXML(enXml)
 print("Writing XML files")
 for i in range(len(languages)):
     lang = languages[i]
     textOut = otherXMLText[i]
-    outName = EN_XML.replace("en", lang);
+    outName = EN_YML.replace("en", lang)
     with open(OUT_DIRECTORY + "/" + outName, "w") as file:
         file.write(textOut)
 
+print("Found %d translations!" % translationFoundCount)
 print("Cannot find %d items"%len(cannotFind))
+
+if DEBUG:
+    print("=============CANNOT FIND:=============")
+    for c in cannotFind:
+        print(c)
+    print("=============END CANNOT FIND LIST=============")
