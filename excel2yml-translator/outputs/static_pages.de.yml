@@ -1,0 +1,37 @@
+de:
+  partner_program:
+      application_success:
+        back: "Zurück"
+        title: "Vielen Dank!"
+        description: "Wir haben Ihren Antrag erhalten. Ein Mitglied des GrabCAD-Teams wird sich in Kürze mit Ihnen in Verbindung setzen."
+        button: "Fertig"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "SDK kaufen"
+        description: "Füllen Sie das Antragsformular aus, um mit dem Prozess zum Kauf eines GrabCAD-SDK zu beginnen. Nachdem Sie den Antrag eingesendet haben, setzt sich ein Mitglied des GrabCAD-Teams mit Ihnen in Verbindung."
+        labels:
+          sdk_product: "An welchem GrabCAD-SDK haben Sie Interesse?"
+        placeholders:
+          sdk_product: "SDK auswählen"
+      partner_application:
+        back: "Zurück"
+        title: "Partner werden"
+        description: "Füllen Sie das Antragsformular für GrabCAD-Softwarepartner aus, um mit dem Prozess zur Aufnahme als einer unserer Partner zu beginnen. Nachdem Sie den Antrag eingesendet haben, setzt sich ein Mitglied des GrabCAD-Teams mit Ihnen in Verbindung."
+        form:
+          submit: "Senden"
+        labels:
+          software_solution: "Ihre Softwarelösung"
+          stratasys_product: "Für welche Maschine und/oder Software von Stratasys möchten Sie die Integration herstellen?"
+        placeholders:
+          first_name: "Vorname"
+          last_name: "Nachname"
+          email: "E-Mail"
+          company_name: "Name des Unternehmens"
+          role: "Rolle"
+          country: "Standort"
+          phone: "Telefon (optional)"
+          company_website: "Website des Unternehmens (optional)"
+          software_solution: "Beschreiben Sie kurz Ihre Softwarelösung"
+          stratasys_product: "Nennen Sie die Maschine und/oder Software (optional)"

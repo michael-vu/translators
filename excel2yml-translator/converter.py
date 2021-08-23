@@ -1,9 +1,9 @@
 from os import name
-from numpy import mat
 import pandas as pd
 import difflib
 import yaml
 
+DEBUG = True
 EXCEL_FILE = "Application forms translations (GC-72055) from vendor.xlsx"
 EN_XML = "static_pages.en.yml"
 
@@ -11,7 +11,9 @@ INPUT_DIR = "inputs"
 OUTPUT_DIR = "outputs"
 START_ROW = 6
 MAX_ROW = 50
-languages = ["de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"]
+languages = ["en", "de", "es", "fr", "it", "ru", "ja", "ko", "zh-CN", "zh-TW"]
+
+# "de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"
 
 engXmlValues = []
 def parseXML(input):
@@ -74,18 +76,28 @@ def findMatch(input, doc):
 notFoundCount = 0
 foundCount = 0
 
+notFoundList = []
+
 for text in engXmlValues:
     matchIndex = findMatch(text, engTexts)
     if matchIndex > -1:
         for i in range(len(otherXMLText)):
             data = otherXMLText[i]
-            data = data.replace(text, excelData[matchIndex][i])
+            translatedText = excelData[matchIndex][i].strip()
+            otherXMLText[i] = data.replace(text, translatedText)
         foundCount = foundCount + 1
     else:
         notFoundCount = notFoundCount + 1
+        notFoundList.append(text)
 
 print("Found %d translations!" % foundCount)
 print("Cannot find %d translations!" % notFoundCount)
+
+print("=====================NOTFOUND========================")
+if DEBUG:
+    for i in notFoundList:
+        print(i)
+print("=====================NOTFOUND========================")
 
 for lang in languages:
     EN_XML.replace("en", lang)

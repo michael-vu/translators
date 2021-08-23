@@ -9,7 +9,7 @@ en:
         messages:
           error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
       sdk_application:
-        title: "Buy SDK"
+        title: "Buy an SDK"
         description: "Complete the application form to start the process of purchasing a GrabCAD SDK. Once you have submitted your application, a GrabCAD team member will reach out to you."
         labels:
           sdk_product: "Which GrabCAD SDK you are interested in?"

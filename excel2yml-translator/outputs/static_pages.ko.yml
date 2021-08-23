@@ -1,0 +1,37 @@
+ko:
+  partner_program:
+      application_success:
+        back: "뒤로"
+        title: "감사합니다!"
+        description: "신청서가 접수되었습니다. GrabCAD 팀원이 곧 연락을 드릴 것입니다."
+        button: "완료"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "SDK 구매하기"
+        description: "GrabCAD SDK 구매 절차를 시작하려면 신청서를 작성하십시오. 신청서를 제출하시면 GrabCAD 팀원이 연락을 드릴 것입니다."
+        labels:
+          sdk_product: "어떤 GrabCAD SDK에 관심이 있으십니까?"
+        placeholders:
+          sdk_product: "SDK 선택"
+      partner_application:
+        back: "뒤로"
+        title: "파트너 되기"
+        description: "저희 파트너가 되는 과정을 시작하려면 GrabCAD 소프트웨어 파트너 신청서를 작성하십시오. 신청서를 제출하시면 GrabCAD 팀원이 연락을 드릴 것입니다."
+        form:
+          submit: "제출"
+        labels:
+          software_solution: "사용 중인 소프트웨어 솔루션"
+          stratasys_product: "어느 Stratasys 장비 및/또는 소프트웨어와 통합하고 싶으십니까?"
+        placeholders:
+          first_name: "이름"
+          last_name: "성"
+          email: "이메일"
+          company_name: "회사"
+          role: "역할"
+          country: "위치"
+          phone: "전화번호(선택 사항)"
+          company_website: "회사 웹 사이트(선택 사항)"
+          software_solution: "사용 중인 소프트웨어 솔루션에 대한 간략한 설명"
+          stratasys_product: "장비 및/또는 소프트웨어(선택 사항)"

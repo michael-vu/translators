@@ -1,0 +1,37 @@
+ru:
+  partner_program:
+      application_success:
+        back: "Назад"
+        title: "Благодарим вас!"
+        description: "Мы получили вашу заявку. Специалист по GrabCAD скоро свяжется с вами."
+        button: "Готово"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "Купить SDK"
+        description: "Заполните форму заявки, чтобы приступить к покупке GrabCAD SDK. После отправки заявки специалист по GrabCAD свяжется с вами."
+        labels:
+          sdk_product: "Какая версия GrabCAD SDK вас интересует?"
+        placeholders:
+          sdk_product: "Выберите версию SDK"
+      partner_application:
+        back: "Назад"
+        title: "Стать партнером"
+        description: "Заполните форму заявки о партнерстве в сфере программного обеспечения GrabCAD, чтобы стать одним из наших партнеров. После отправки заявки специалист по GrabCAD свяжется с вами."
+        form:
+          submit: "Отправить"
+        labels:
+          software_solution: "Ваше программный продукт"
+          stratasys_product: "С какими аппаратами Stratasys и/или программным обеспечением вы хотели бы его интегрировать?"
+        placeholders:
+          first_name: "Имя"
+          last_name: "Фамилия"
+          email: "Эл. почта"
+          company_name: "Введите название компании"
+          role: "Роль"
+          country: "Местоположение"
+          phone: "Телефон (необязательно)"
+          company_website: "Сайт компании (необязательно)"
+          software_solution: "Кратко опишите свой программный продукт"
+          stratasys_product: "Перечислите аппараты и/или программное обеспечение (необязательно)"

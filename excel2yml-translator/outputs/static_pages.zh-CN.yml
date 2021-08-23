@@ -1,0 +1,37 @@
+zh-CN:
+  partner_program:
+      application_success:
+        back: "返回"
+        title: "谢谢！"
+        description: "我们已经收到您的申请。GrabCAD 团队成员将很快与您联系。"
+        button: "完成"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "购买 SDK"
+        description: "填写申请表，开始购买 GrabCAD SDK 的流程。您提交申请后，GrabCAD 团队成员将与您联系。"
+        labels:
+          sdk_product: "您对哪个 GrabCAD SDK 感兴趣？"
+        placeholders:
+          sdk_product: "选择 SDK"
+      partner_application:
+        back: "返回"
+        title: "成为合作伙伴"
+        description: "填写 GrabCAD 软件合作伙伴申请表，开始成为我们的合作伙伴。您提交申请后，GrabCAD 团队成员将与您联系。"
+        form:
+          submit: "提交"
+        labels:
+          software_solution: "您的软件解决方案"
+          stratasys_product: "您希望与哪种 Stratasys 机器和/或软件集成？"
+        placeholders:
+          first_name: "名"
+          last_name: "姓"
+          email: "电子邮件地址"
+          company_name: "公司"
+          role: "职位"
+          country: "位置"
+          phone: "电话（可选）"
+          company_website: "公司网站（可选）"
+          software_solution: "简要描述您的软件解决方案"
+          stratasys_product: "列出机器和/或软件（可选）"

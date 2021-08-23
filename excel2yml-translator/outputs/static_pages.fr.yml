@@ -1,0 +1,37 @@
+fr:
+  partner_program:
+      application_success:
+        back: "Retour"
+        title: "Merci !"
+        description: "Nous avons bien reçu votre demande. Un membre de l’équipe GrabCAD vous contactera rapidement."
+        button: "Terminé"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "Acheter un kit de développement logiciel"
+        description: "Remplissez le formulaire d’inscription pour commencer le processus d’achat du kit de développement logiciel GrabCAD. Une fois que vous aurez envoyé votre formulaire d’inscription, vous serez contacté par un membre de l’équipe GrabCAD."
+        labels:
+          sdk_product: "Par quel kit de développement logiciel GrabCAD êtes-vous intéressé ?"
+        placeholders:
+          sdk_product: "Sélectionnez un kit de développement logiciel"
+      partner_application:
+        back: "Retour"
+        title: "Devenir un partenaire"
+        description: "Remplissez le formulaire de demande de partenariat avec le logiciel GrabCAD pour commencer la procédure afin de devenir l’un de nos partenaires. Une fois que vous aurez envoyé votre formulaire, vous serez contacté par un membre de l’équipe GrabCAD."
+        form:
+          submit: "Envoyer"
+        labels:
+          software_solution: "Votre solution logicielle"
+          stratasys_product: "Quel logiciel et/ou quelle machine Stratasys souhaiteriez-vous intégrer ?"
+        placeholders:
+          first_name: "Prénom"
+          last_name: "Nom"
+          email: "E-mail"
+          company_name: "Société"
+          role: "Rôle"
+          country: "Emplacement"
+          phone: "Téléphone (facultatif)"
+          company_website: "Site Web de l’entreprise (facultatif)"
+          software_solution: "Décrivez brièvement votre solution logicielle"
+          stratasys_product: "Dressez la liste des machines et/ou logiciels (facultatif)"

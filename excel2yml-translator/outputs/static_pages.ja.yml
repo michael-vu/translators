@@ -1,0 +1,37 @@
+ja:
+  partner_program:
+      application_success:
+        back: "戻る"
+        title: "ご協力ありがとうございました。"
+        description: "お申し込みいただきました。GrabCAD のチームメンバーからすぐにご連絡いたします。"
+        button: "完了"
+      application:
+        messages:
+          error: "We're sorry, but something wrong went with your application. We have been notified of this issue and will get back to you as soon as possible!"
+      sdk_application:
+        title: "SDKを購入する"
+        description: "この申込書に記入して、 GrabCAD SDK を購入する手続きを始めます。申込書を送信いただいたら、 GrabCAD のチームメンバーからご連絡いたします。"
+        labels:
+          sdk_product: "ご興味のある GrabCAD SDK はどれですか？"
+        placeholders:
+          sdk_product: "SDKを選択する"
+      partner_application:
+        back: "戻る"
+        title: "パートナーになる"
+        description: "GrabCAD ソフトウェアパートナー申込書に記入して、 当社のパートナーになる手続きを始めます。申込書を送信したら、 GrabCAD のチームメンバーからご連絡いたします。"
+        form:
+          submit: "送信"
+        labels:
+          software_solution: "ご使用のソフトウェアソリューション"
+          stratasys_product: "統合したいStratasysの装置やソフトウェアはどれですか。"
+        placeholders:
+          first_name: "名"
+          last_name: "姓"
+          email: "電子メール"
+          company_name: "会社名"
+          role: "役職"
+          country: "場所"
+          phone: "電話番号（任意）"
+          company_website: "御社のウェブサイト（任意）"
+          software_solution: "お使いのソフトウェアソリューションについて、簡単にご説明ください。"
+          stratasys_product: "装置とソフトウェアのリスト（任意）"

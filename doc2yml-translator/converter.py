@@ -3,10 +3,10 @@ import difflib
 import re
 import yaml
 
-DEBUG = False
+DEBUG = True
 OUT_DIRECTORY = "output"
 INPUT_DIR = "input"
-EN_DOC = "EN - SDK Landing Page - English.docx"
+EN_DOC = "EN - Featured GrabCAD Software Partners - English.docx"
 EN_YML = "static_pages.en.yml"
 languages = ["de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"]
 
@@ -15,10 +15,12 @@ cannotFind = []
 def readFile(name):
     en_Text = docx2txt.process("./" + INPUT_DIR + "/" + name)
     en_Text = re.sub(r"\n+", "\n", en_Text)
+    en_Text = re.sub(r"\/(.*)\.", "\n", en_Text)
     en_Text = en_Text.replace("Title: ", "", 1)
     en_Text = en_Text.replace("Meta description: ", "", 1)
     en_Text = en_Text.replace("Top nav bar link name: ", "", 1)
     en_Text = re.sub(r"<|>", "", en_Text)
+    en_Text = re.sub(r" +\| +", "\n", en_Text)
     splitText = en_Text.split("\n")
     return splitText
 
@@ -62,7 +64,7 @@ def getTranslations(index):
 
 def writeTranslations(original, translations):
     for i in range(len(translations)):
-        translation = translations[i]
+        translation = translations[i].strip()
         otherXMLText[i] = otherXMLText[i].replace(original, translation)
 
 def findMatch(input, doc):
@@ -89,13 +91,17 @@ def parseYML(input):
         for key in input:
             parseYML(input[key])
     elif type(input) == str:
+        if input.startswith("Learn more") and not input.endswith("SDKs"):
+            return
         matchIndex = findMatch(input, enDoc)
         if matchIndex > -1:
             translations = getTranslations(matchIndex)
             writeTranslations(input, translations)
             translationFoundCount = translationFoundCount + 1
         else:
-            cannotFind.append(input)
+            if re.search(r"\/(.*)\.", input) == None:
+                if not input in cannotFind:
+                    cannotFind.append(input)
 
 parseYML(enXml)
 
