@@ -2,11 +2,12 @@ import docx2txt
 import difflib
 import re
 import yaml
+from os import path
 
 DEBUG = True
 OUT_DIRECTORY = "output"
 INPUT_DIR = "input"
-EN_DOC = "EN - Featured GrabCAD Software Partners - English.docx"
+EN_DOC = "Teton Include to vendor_EN.docx"
 EN_YML = "static_pages.en.yml"
 languages = ["de", "es", "fr", "it", "ja", "ko", "ru", "zh-CN", "zh-TW"]
 
@@ -42,11 +43,18 @@ for lang in languages:
     doc = readFile(fileName)
     otherDoc.append(doc)
 
-with open(INPUT_DIR + "/" + EN_YML, "r") as file:
-    texts = file.read()
-    for i in range(len(languages)):
-        lang = languages[i]
-        otherXMLText.append(texts.replace("en", lang, 1))
+for lang in languages:
+    xmlFileName = INPUT_DIR + "/" + EN_YML.replace("en", lang)
+    try:
+        with open("./" + xmlFileName, "r") as file:
+            text = file.read()
+        otherXMLText.append(text)
+    except:
+        with open(INPUT_DIR + "/" + EN_YML, "r") as file:
+            texts = file.read()
+            for i in range(len(languages)):
+                lang = languages[i]
+                otherXMLText.append(texts.replace("en", lang, 1))
 
 def findStringWithStart(input, doc):
     for i in range(len(doc)):
@@ -91,8 +99,8 @@ def parseYML(input):
         for key in input:
             parseYML(input[key])
     elif type(input) == str:
-        if input.startswith("Learn more") and not input.endswith("SDKs"):
-            return
+        # if input.startswith("Learn more") and not input.endswith("SDKs"):
+        #     return
         matchIndex = findMatch(input, enDoc)
         if matchIndex > -1:
             translations = getTranslations(matchIndex)

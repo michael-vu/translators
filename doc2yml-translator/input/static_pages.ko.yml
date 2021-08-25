@@ -71,9 +71,9 @@ ko:
           description: "MES 소프트웨어, DRM 소프트웨어, PLM 소프트웨어 및 분석 소프트웨어를 포함하여, 업계의 최고 파트너와 협업하여 완전한 솔루션을 제공합니다."
           partners:
             - image_path: "static_pages/partner_program/partner_home/partner-teton.svg"
-              text: "Teton Simulation – Teton Simulation은 파트의 3D 인쇄 효율을 극대화하는 데 유용한 소프트웨어 제품을 개발합니다. SmartSlice를 사용하면 인쇄 시간과 재료 사용량을 최소화하기 위해 부품을 최적화하는 데 추측에 의존하지 않아도 되며, 최종 사용자가 요구하는 성능이 보장됩니다. 이 회사는 사용이 간편하면서 매우 빠르고 신뢰할 수 있는 결과를 가져오는 소프트웨어를 제공하는 전문 기업입니다."
+              text: "<b>Teton Simulation</b> develops software products to help maximize efficiency when 3D printing parts. SmartSlice takes the guesswork out of optimizing a part for minimum print time and material use, while ensuring that end-use performance requirements are met. The company’s hallmark is providing software that is simple to use while providing very fast, reliable results."
               url: "https://www.tetonsim.com/"
-              learn_more: "Teton Simulation"
+              learn_more: "Learn more about Teton Simulation"
             - image_path: "static_pages/partner_program/partner_home/partner-siemens.svg"
               text: "<b>Siemens</b>는 설계 최적화부터 부품 빌드 준비, 그리고 생산 및 자격 시뮬레이션까지 AM 혁신 프로세스의 매 단계를 연결하고 자동화하는 산업용 3차원 인쇄용 엔드 투 엔드 소프트웨어 솔루션을 제공합니다."
               url: "https://www.siemens.com/additive"
